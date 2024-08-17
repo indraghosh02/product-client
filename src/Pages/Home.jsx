@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchProducts = async () => {
-            let url = `http://localhost:5000/allProducts?`;
+            let url = `https://product-server-kappa.vercel.app/allProducts?`;
 
             if (sortOption) {
                 url += `sort=${sortOption}&`;
@@ -166,8 +166,8 @@ export default Home;
 
 //     useEffect(() => {
 //         const fetchProducts = async () => {
-//             // let url = `http://localhost:5000/allProducts?`;
-//             let url = `http://localhost:5000/allProducts?page=${currentPage}&size=${itemsPerPage}`;
+//             // let url = `https://product-server-kappa.vercel.app/allProducts?`;
+//             let url = `https://product-server-kappa.vercel.app/allProducts?page=${currentPage}&size=${itemsPerPage}`;
 
 //             if (sortOption) {
 //                 url += `sort=${sortOption}&`;
@@ -351,7 +351,7 @@ export default Home;
 
 //     useEffect(() => {
 //         const fetchProducts = async () => {
-//             let url = `http://localhost:5000/allProducts?page=${currentPage}&limit=10&`;
+//             let url = `https://product-server-kappa.vercel.app/allProducts?page=${currentPage}&limit=10&`;
 
 //             if (sortOption) {
 //                 url += `sort=${sortOption}&`;

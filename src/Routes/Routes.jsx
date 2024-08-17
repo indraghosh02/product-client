@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
-            loader: () => fetch('http://localhost:5000/ProductsCount')
+            loader: () => fetch('https://product-server-kappa.vercel.app/ProductsCount')
         },
         {
             path: "/login",
